@@ -12,6 +12,8 @@
 // ==/UserScript==
 
 (function () {
+    'use strict';
+
     function sendNotification(body) {
         if (Notification.permission != 'granted') {
             Notification.requestPermission();
